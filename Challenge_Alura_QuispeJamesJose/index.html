@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <img src="images/logo.png" alt="Logo A" class="logo">
+        <div class="carousel-container">
+            <div class="carousel-images">
+                <img src="images/p1.png" alt="Imagen 1" class="carousel-image">
+                <img src="images/p2.png" alt="Imagen 2" class="carousel-image">
+                <img src="images/p3.png" alt="Imagen 3" class="carousel-image">
+                <img src="images/p4.png" alt="Imagen 4" class="carousel-image">
+                <img src="images/p5.png" alt="Imagen 5" class="carousel-image">
+                <img src="images/p6.png" alt="Imagen 6" class="carousel-image">
+                <img src="images/p7.png" alt="Imagen 7" class="carousel-image">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <textarea id="inputText" class="texto" cols="20" rows="30" placeholder="Ingrese el texto aquí"></textarea>
+            <div>
+                <h6 class="instruciones">
+                    <img src="images/group.png" alt="Instrucción"> Solo letras minúsculas y sin acentos
+                </h6>
+            </div>
+            <div class="botones">
+                <button onclick="encriptar();" class="botones__encriptar">Encriptar</button> 
+                <button onclick="desencriptar();" class="botones__desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        
+        <section>
+            <div class="mensaje-contenedor">
+                <textarea id="outputText" class="mensaje" cols="30" rows="30" readonly></textarea>
+            </div>
+            <div class="boton__copiar">
+                <button onclick="copiarTexto();" class="botones__copiar" style="display: none;">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer"> 
+        <p>2024, Desarrollado por James Jose Quispe Torres</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
